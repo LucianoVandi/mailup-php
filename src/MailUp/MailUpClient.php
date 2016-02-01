@@ -17,6 +17,10 @@ class MailUpClient {
     var $accessToken;
     var $refreshToken;
 
+    function __construct($inClientId, $inClientSecret, $inCallbackUri) {
+        $this->MailUpClient($inClientId, $inClientSecret, $inCallbackUri);
+    }
+
     function getLogonEndpoint() {
         return $this->logonEndpoint;
     }
